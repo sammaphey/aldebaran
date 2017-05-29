@@ -1,0 +1,223 @@
+body, html {
+    height: 100%;
+    /* The image used */
+    background-image: url("../img/background.jpg");
+    /* Full height */
+    height: 100%;
+    min-height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#nad-image {
+  width: 50%;
+  margin: 20px 0px 20px 0px;
+}
+
+#nysut-image {
+  height: 80px;
+  margin: 20px 0px 20px 0px;
+}
+
+#footer {
+  color: white;
+  text-align: center;
+}
+
+#home-image {
+    margin-top: -10px;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbar-header {
+    height: 60px;
+    width: 80px;
+}
+
+.navbar-toggle {
+    margin-top: 12px;
+}
+
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    font-size: 24px;
+}
+
+.nav.navbar-nav li a {
+    color: black;
+}
+
+
+/* Effect 1: Brackets */
+
+.nav a::before, .nav a::after {
+    color: black;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+    color: black;
+}
+
+.nav a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+    color: black;
+}
+
+.nav a:hover::before, .nav a:hover::after, .nav a:focus::before, .nav a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+    color: black;
+}
+
+.jumbotron a::before, .jumbotron a::after {
+    color: black;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.jumbotron h3 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+    color: black;
+}
+
+.jumbotron h3 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+    color: black;
+}
+
+.jumbotron h3 a:hover::before, .jumbotron h3 a:hover::after, .jumbotron h3 a:focus::before, .jumbotron h3 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+    color: black;
+}
+
+
+.jumbotron {
+    background: rgb(211, 211, 211);
+    /* This is for ie8 and below */
+    background: rgba(211, 211, 211, 0.5);
+}
+
+
+/*.jumbotron p {
+    font-weight: bold;
+}*/
+
+.jumbotron a {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.header-image img {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/* Blur */
+
+.wrapper {
+    display: table;
+    margin: auto;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.image .projects figure img {
+    border-radius: 50%;
+}
+
+.image .resume figure img {
+    border-radius: 50%;
+}
+
+.image figure img {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.image figure p {
+    position: absolute;
+    margin-top: -50px;
+    background: rgb(211, 211, 211);
+    /* This is for ie8 and below */
+    background: rgba(211, 211, 211, 0.5);
+}
+
+.image figure:hover img {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+.downloads a {
+    float: right;
+    margin: 0px 5px 0px 5px;
+}
+
+.downloads span.glyphicon-download {
+    font-size: 2.0em;
+}
