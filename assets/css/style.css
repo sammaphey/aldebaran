@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     /* The image used */
-    background-image: url("../img/background.jpg");
+    background-color: white;
     /* Full height */
     height: 100%;
     min-height: 100%;
@@ -14,10 +14,11 @@ body, html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-top: 40px;
 }
 
 ul li {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 hr {
@@ -30,18 +31,18 @@ hr {
 }
 
 #nad-image {
-  width: 50%;
-  margin: 20px 0px 20px 0px;
+    width: 50%;
+    margin: 20px 0px 20px 0px;
 }
 
 #nysut-image {
-  height: 80px;
-  margin: 20px 0px 20px 0px;
+    height: 80px;
+    margin: 20px 0px 20px 0px;
 }
 
 #footer {
-  color: white;
-  text-align: center;
+    color: black;
+    text-align: center;
 }
 
 #home-image {
@@ -61,11 +62,30 @@ hr {
 }
 
 .navbar {
-    background-color: transparent;
-    background: transparent;
-    border-color: transparent;
     font-size: 24px;
+    margin-bottom: 0;
+    background-color: #1ac6ff;
+    z-index: 9999;
+    border: 0;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    padding: 0px 5px 0px 5px;
+    font-size: 10px;
 }
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-size: 10px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 
 .nav.navbar-nav li a {
     color: black;
@@ -144,11 +164,12 @@ hr {
     color: black;
 }
 
-
 .jumbotron {
     background: rgb(211, 211, 211);
     /* This is for ie8 and below */
     background: rgba(211, 211, 211, 0.5);
+
+    margin-top: 20px;
 }
 
 
@@ -163,11 +184,13 @@ hr {
 }
 
 .header-image img {
-  display: block;
-  margin: auto;
-  margin-bottom: 15px;
-  border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
+
+
 /* Blur */
 
 .wrapper {

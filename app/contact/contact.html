@@ -1,26 +1,26 @@
-<div class="container">
+<div class="container" ng-controller="contactCtrl" ng-init="loaded()">
     <div class="jumbotron">
         <ng-include src="'app/templates/header.html'"></ng-include>
         <p>To learn more, request an interpreter from Aldebaran Interpreting Services, or discuss contracting Third Eye Theater for your next interpreted production or event contact us here. Expect a response from us within 72 hours. If you need to contact
-            us sooner and are having trouble contacting us this way please call or text 315-955-5223 or email us at <a href="interpreting@aldebaraninterpretingservices.com">interpreting@aldebaraninterpretingservices.com</a></p>
-        <form>
+            us sooner and are having trouble contacting us this way please call or text 315-955-5223 or email us at <a href="thirdeyeterp@protonmail.com">thirdeyeterp@protonmail.com</a></p>
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyYYRSZffgmD5zdD1Ixz0V1j7lr5tMmuJhxAKdoCVrCnwb3ZbDP/exec">
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
                         <label>First Name</label>
-                        <input class="form-control" placeholder="First Name">
+                        <input class="form-control" name="First Name" placeholder="First Name">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label>Last Name</label>
-                        <input class="form-control" placeholder="Last Name">
+                        <input class="form-control" name="Last Name" placeholder="Last Name">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" name="email" class="form-control" placeholder="Email">
                     </div>
                 </div>
             </div>
@@ -28,13 +28,13 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Address Street 1</label>
-                        <input class="form-control" placeholder="Address Street 1">
+                        <input class="form-control" name="Address 1" placeholder="Address Street 1">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Address Street 2</label>
-                        <input class="form-control" placeholder="Address Street 2">
+                        <input class="form-control" name="Address 2" placeholder="Address Street 2">
                     </div>
                 </div>
             </div>
@@ -42,19 +42,19 @@
                 <div class="col-md-8">
                     <div class="form-group">
                         <label>City</label>
-                        <input class="form-control" placeholder="City">
+                        <input class="form-control" name="City" placeholder="City">
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="form-group">
                         <label>Zip Code</label>
-                        <input class="form-control" placeholder="Zip Code" maxlength="6">
+                        <input class="form-control" name="Zip" placeholder="Zip Code" maxlength="6">
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="form-group">
                         <label>State</label>
-                        <select class="form-control" maxlength="6">
+                        <select class="form-control" name="State" maxlength="6">
                           <option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -114,13 +114,13 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Daytime Phone</label>
-                        <input class="form-control" placeholder="Daytime Phone">
+                        <input class="form-control" name="Day Phone" placeholder="Daytime Phone">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Evening Phone</label>
-                        <input class="form-control" placeholder="Evening Phone">
+                        <input class="form-control" name="Night Phone" placeholder="Evening Phone">
                     </div>
                 </div>
             </div>
@@ -128,15 +128,15 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label>Comments</label>
-                        <textarea class="form-control" placeholder="Leave your comments here" rows="3"></textarea>
+                        <textarea class="form-control" name="Comments" placeholder="Leave your comments here" rows="3"></textarea>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button id="submit" type="submit" class="btn btn-primary" ng-click="sent()">Submit</button>
         </form>
         <p>We accept payment by check.</p>
         <p>Please write check out to Aldebaran Interpreting and Third Eye Theater and mail to:</p>
-        <p>Aldebaran Interpreting and Third Eye Theater</br>PO Box 6584</br>Watertown, NY 13601</p>
+        <p>Aldebaran Interpreting and Third Eye Theater</br>150 Ward Street</br>Watertown, NY 13601</p>
     </div>
 </div>
 </div>

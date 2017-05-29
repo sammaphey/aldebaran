@@ -8,11 +8,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
 
-        .when('/services', {
-            templateUrl: 'app/services/services.html'
-        })
-
-
         .when('/faq', {
             templateUrl: 'app/faq/faq.html'
         })
