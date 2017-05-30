@@ -14,7 +14,7 @@ body, html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 ul li {
@@ -168,6 +168,7 @@ hr {
     background: rgb(211, 211, 211);
     /* This is for ie8 and below */
     background: rgba(211, 211, 211, 0.5);
+    border-radius: 5px;
 
     margin-top: 20px;
 }
